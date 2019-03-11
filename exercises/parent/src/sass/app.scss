@@ -3,18 +3,27 @@
   width: 100%;
   margin: auto;
   background: #eee;
-
   .sidebar,
-  .main { padding: 10px; }
-
   .main {
-    margin-left: 220px;
-    min-height: 100vh;
-    border-left: 2px solid #333;
+    padding: 10px;
   }
-
   .sidebar {
     width: 200px;
     float: left;
+  }
+  .main {
+    margin-left: 220px;
+    min-height: 100vh;
+  }
+  &.right-nav {
+    .main {
+      margin-right: 220px;
+      margin-left: 0px;
+      padding: 10px;
+      border-right: 2px solid #333;
+    }
+    .sidebar {
+      float: right;
+    }
   }
 }

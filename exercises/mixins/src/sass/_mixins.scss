@@ -1,3 +1,4 @@
+//if default value is null - if dont pass in value when declare mixin that style wont be used
 @mixin btn-color($color) {
   background-color: $color;
   color: #ffffff;

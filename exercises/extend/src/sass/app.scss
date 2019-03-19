@@ -1,5 +1,26 @@
 body {
-    h1 {
+  h1 {
     color: #c69;
   }
+}
+
+%btn-base {
+  padding: 2px 10px;
+  border-radius: 2px;
+  border-style: solid;
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.btn-primary {
+  @extend %btn-base;
+  background: red;
+  color: white;
+}
+
+.btn-secondary {
+  @extend %btn-base;
+  background: pink;
+  color: black;
 }
